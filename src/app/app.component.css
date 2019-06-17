@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+
+  }
+
+.border {
+    border: 3px solid black;
+    margin: auto;
+    width: 80%;
+  }
+
+
+agm-map {
+    align-self: center;
+    height: 500px;
+    width: 100%;
+  }

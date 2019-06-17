@@ -1,0 +1,27 @@
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<div class="center">
+  <h1>{{ title }}</h1>
+  <h2>{{ ip }}</h2>
+
+  <div class="border">
+    <agm-map [latitude]="lat" [longitude]="lng" [fitBounds]="true">
+      <agm-marker [latitude]="lat" [longitude]="lng" [agmFitBounds]="true"></agm-marker>
+      <!--<agm-marker [latitude]="data.lat_long[0].lat" [longitude]="data.lat_long[0].long" [agmFitBounds]="true"></agm-marker>-->
+    </agm-map>
+  </div>
+  test lat: {{ lat }} / long: {{ lng }}
+
+<!--  <google-chart #chart
+[title]="title"
+[type]="type"
+[data]="data"
+[columnNames]="columnNames"
+[options]="options"
+[width]="width"
+[height]="height">
+</google-chart>-->
+
+</div>
+<router-outlet></router-outlet>
